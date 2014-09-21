@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TridentsOfArdeus" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TridentsOfArdeus" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="D:/SFML-2.1/include" />
+				</Compiler>
+				<Linker>
+					<Add library="D:\SFML-2.1\lib\libsfml-graphics-s.a" />
+					<Add library="D:\SFML-2.1\lib\libsfml-window-s.a" />
+					<Add library="D:\SFML-2.1\lib\libsfml-system-s.a" />
+					<Add library="D:\SFML-2.1\lib\libsfml-main.a" />
+					<Add library="D:\SFML-2.1\lib\libsfml-audio-s.a" />
+					<Add library="D:\SFML-2.1\lib\libsfml-network-s.a" />
+					<Add directory="D:/SFML-2.1/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/TridentsOfArdeus" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="F:/SFML-2.0/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static -libgcc" />
+					<Add library="..\..\SFML-2.0\lib\libsfml-audio-s.a" />
+					<Add library="..\..\SFML-2.0\lib\libsfml-network-s.a" />
+					<Add library="..\..\SFML-2.0\lib\libsfml-graphics-s.a" />
+					<Add library="..\..\SFML-2.0\lib\libsfml-window-s.a" />
+					<Add library="..\..\SFML-2.0\lib\libsfml-system-s.a" />
+					<Add directory="F:/SFML-2.0/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DSFML_STATIC" />
+		</Compiler>
+		<Unit filename="Engine.cpp" />
+		<Unit filename="Engine.h" />
+		<Unit filename="Level.cpp" />
+		<Unit filename="Level.h" />
+		<Unit filename="Main.cpp" />
+		<Unit filename="Player.cpp" />
+		<Unit filename="Player.h" />
+		<Unit filename="Tile.cpp" />
+		<Unit filename="Tile.h" />
+		<Unit filename="levelCrap.h" />
+		<Unit filename="playerS.cpp" />
+		<Unit filename="playerS.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

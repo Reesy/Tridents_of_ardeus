@@ -1,0 +1,6 @@
+#ifndef GUARD_resource_rc
+#define GUARD_resource_rc
+
+MAINICON ICON "favicon.ico"
+
+#endif
